@@ -1,3 +1,17 @@
+/* menu */
+.navbar {
+	background-color: #006342;
+}
+
+.navbar a {
+	color: white;
+}
+
+.navbar a:hover {
+	background-color: #DDD;
+	color: black;
+}
+
 /* texto hero image */
 
 .hero-title {
@@ -53,4 +67,11 @@
 
 .servicesText:hover {
 	border: 1px solid #008000;
+}
+
+/* seção contato */
+
+.contactIcon {
+	font-size: 56px;
+	color: #006342;
 }

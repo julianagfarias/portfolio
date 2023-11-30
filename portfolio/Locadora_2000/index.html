@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Locadora 2000</title>
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+
+	<script src="script.js"></script>
+
+</head>
+<body>
+
+	<nav class="navbar navbar-expand-lg bg-light">
+		<div class="container-fluid">
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+					<li class="nav-item">
+						<a class="nav-link active" aria-current="page" href="#tabFilmes"> Filmes Disponíveis</a>
+					</li>
+
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" id="dropGeneros" role="button" data-bs-toggle="dropdown" aria-expanded="false" href="#drop"> Filmes por Categoria</a>
+
+						<!-- menu suspenso -->
+						<ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+							<li><a class="dropdown-item" href="#gAcao">Ação</a></li>
+							<li><a class="dropdown-item" href="#gAnim">Animação</a></li>
+							<li><a class="dropdown-item" href="#gRoman">Romance</a></li>
+							<li><a class="dropdown-item" href="#gSus">Suspense</a></li>
+							<li><a class="dropdown-item" href="#gCom">Comédia</a></li>
+							<li><a class="dropdown-item" href="#gDrama">Drama</a></li>
+						</ul>
+					</li>
+
+					<li class="nav-item">
+						<a class="nav-link" href="#cadFilmes"> Cadastrar Filmes</a>
+					</li>
+
+				</ul>
+			</div>
+
+			<img src="img/film.png" width="5%">
+			<a class="navbar-brand" href="#topo"> Locadora 2000 </a>
+
+		</div>
+	</nav>
+
+	<div class="container">
+		<table class="table table-striped table-hover">
+			<thead>
+				<tr class="text-center">
+					<th scope="col">Código</th>
+					<th scope="col">Título</th>
+					<th scope="col">Diretor</th>
+					<th scope="col">Lançamento</th>
+					<th scope="col">Gênero</th>
+					<th scope="col">Ator/Atriz principal</th>
+					<th scope="col">Nota IMDb</th>
+				</tr>
+			</thead>
+			<tbody class="text-center">
+				<!-- Ação -->
+				<tr>
+					<th class="text-center table-primary" colspan="7" id="gAcao">Ação</th>
+				</tr>
+				<tr>
+					<th scope="row">1</th>
+					<td>D.E.B.S. - As Super Espiãs</td>
+					<td>Angela Robinson</td>
+					<td>25/03/2005</td>
+					<td>Ação</td>
+					<td>Sara Foster</td>
+					<td>5,4</td>
+				</tr>
+				<tr>
+					<th scope="row">2</th>
+					<td>Matrix</td>
+					<td>Lana Wachowski, Lilly Wachowski</td>
+					<td>21/05/1999</td>
+					<td>Ação</td>
+					<td>Keanu Reeves</td>
+					<td>8,7</td>
+				</tr>
+
+				<!-- Animação -->
+				<tr>
+					<th class="text-center table-primary" colspan="7" id="gAnim">Animação</th>
+				</tr>
+				<tr>
+					<th scope="row">3</th>
+					<td>A Viagem de Chihiro</td>
+					<td>Hayao Miyazaki</td>
+					<td>18/07/2003</td>
+					<td>Animação</td>
+					<td>Rumi Hiiragi (voz)</td>
+					<td>8,6</td>
+				</tr>
+				<tr>
+					<th scope="row">4</th>
+					<td>O Rei Leão</td>
+					<td>Rob Minkoff, Roger Allers</td>
+					<td>8/07/1994</td>
+					<td>Animação</td>
+					<td>James Earl Jones (voz)</td>
+					<td>8,5</td>
+				</tr>
+
+				<!-- Romance -->
+				<tr>
+					<th class="text-center table-primary" colspan="7" id="gRoman">Romance</th>
+				</tr>
+				<tr>
+					<th scope="row">5</th>
+					<td>Hoje Eu Quero Voltar Sozinho</td>
+					<td>Daniel Ribeiro</td>
+					<td>10/04/2014</td>
+					<td>Romance</td>
+					<td>Ghilherme Lobo</td>
+					<td>7,9</td>
+				</tr>
+				<tr>
+					<th scope="row">6</th>
+					<td>Você Nem Imagina</td>
+					<td>Alice Wu</td>
+					<td>01/05/2020</td>
+					<td>Romance</td>
+					<td>Leah Lewis</td>
+					<td>6,9</td>
+				</tr>
+
+				<!-- Suspense -->
+				<tr>
+					<th class="text-center table-primary" colspan="7" id="gSus">Suspense</th>
+				</tr>
+				<tr>
+					<th scope="row">7</th>
+					<td>O Jogo da Imitação</td>
+					<td>Morten Tyldum</td>
+					<td>28/09/2014</td>
+					<td>Suspense</td>
+					<td>Benedict Cumberbatch</td>
+					<td>8,0</td>
+				</tr>
+				<tr>
+					<th scope="row">8</th>
+					<td>Cisne Negro</td>
+					<td>Darren Aronofsky</td>
+					<td>01/09/2010</td>
+					<td>Suspense</td>
+					<td>Natalie Portman</td>
+					<td>8,0</td>
+				</tr>
+
+				<!-- Comédia -->
+				<tr>
+					<th class="text-center table-primary" colspan="7" id="gCom">Comédia</th>
+				</tr>
+				<tr>
+					<th scope="row">9</th>
+					<td>Pulp Fiction: Tempo de Violência</td>
+					<td>Quentin Tarantino</td>
+					<td>18/02/1995</td>
+					<td>Comédia</td>
+					<td>John Travolta</td>
+					<td>8,9</td>
+				</tr>
+				<tr>
+					<th scope="row">10</th>
+					<td>Os Caça-Fantasmas</td>
+					<td>Ivan Reitman</td>
+					<td>20/12/1984</td>
+					<td>Comédia</td>
+					<td>Bill Murray</td>
+					<td>7,8</td>
+				</tr>
+
+				<!-- Drama -->
+				<tr>
+					<th class="text-center table-primary" colspan="7" id="gDrama">Drama</th>
+				</tr>
+				<tr>
+					<th scope="row">11</th>
+					<td>A Garota Dinamarquesa</td>
+					<td>Tom Hooper</td>
+					<td>25/02/2016</td>
+					<td>Drama</td>
+					<td>Eddie Redmayne</td>
+					<td>7,1</td>
+				</tr>
+				<tr>
+					<th scope="row">12</th>
+					<td>Carol</td>
+					<td>Todd Haynes</td>
+					<td>14/01/2016</td>
+					<td>Drama</td>
+					<td>Rooney Mara</td>
+					<td>7,2</td>
+				</tr>
+
+				<tr id="inserirTabela">
+					
+				</tr>
+
+			</tbody>
+
+		</table>
+	</div>
+
+	<!-- linha divisora -->
+	<div class="m-5">
+		<hr class="border-primary border-3 opacity-75">
+	</div>
+
+	<!-- cadastro de filmes -->
+	<div class="container mb-5">
+		<h2 class="text-center">Cadastrar Novo Filme</h2>
+
+		<form name="cadastrar" onsubmit="event.preventDefault()">
+			
+			<!-- linha código e data -->
+			<div class="row">
+				
+				<!-- coluna código -->
+				<div class="mb-3 col">
+					<label for="codFilme" class="form-label">Código</label>
+					<input type="text" class="form-control" id="codFilme" name="codigo" required>
+				</div>
+
+				<!-- coluna data -->
+				<div class="mb-3 col">
+					<label for="anoFilme" class="form-label">Lançamento</label>
+					<input type="text" class="form-control" id="anoFilme" name="data" placeholder="DD/MM/AAAA" required>
+				</div>
+
+			</div>
+
+			<!-- linha título e diretor --> 
+			<div class="row">
+				
+				<!-- coluna título -->
+				<div class="mb-3 col">
+					<label for="tituloFilme" class="form-label">Título</label>
+					<input type="text" id="tituloFilme" class="form-control" name="titulo" required>
+				</div>
+
+				<!-- coluna diretor -->
+				<div class="mb-3 col">
+					<label for="diretorFilme" class="form-label">Diretor</label>
+					<input type="text" id="diretorFilme" class="form-control" name="diretor" required>
+				</div>
+
+			</div>
+
+			<!-- linha gêneros -->
+			<div class="row">
+				
+				
+					<div class="mb-3 col form-check">
+						<input type="radio" id="radiogeneroAcao" name="radio" class="form-check-input" value="Ação" required>
+						<label for="radiogeneroAcao" class="form-label">Ação</label><br>
+						<input type="radio" id="radiogeneroAnim" name="radio" class="form-check-input" value="Animação">
+						<label for="radiogeneroAnim" class="form-label">Animação</label><br>
+						<input type="radio" id="radiogeneroRoman" name="radio" class="form-check-input" value="Romance">
+						<label for="radiogeneroRoman" class="form-label">Romance</label><br>
+					</div>
+					
+					<div class="mb-3 col form-check">
+						<input type="radio" id="radiogeneroSus" name="radio" class="form-check-input" value="Suspense">
+						<label for="radiogeneroSus" class="form-label">Suspense</label><br>
+						<input type="radio" id="radiogeneroCom" name="radio" class="form-check-input" value="Comédia">
+						<label for="radiogeneroCom" class="form-label">Comédia</label><br>
+						<input type="radio" id="radiogeneroDrama" name="radio" class="form-check-input" value="Drama">
+						<label for="radiogeneroDrama" class="form-label">Drama</label><br>
+					</div>
+				
+
+			</div>
+
+
+			<!-- linha atriz/ator e nota --> 
+			<div class="row">
+				
+				<!-- coluna atriz/ator -->
+				<div class="mb-3 col">
+					<label for="atrizFilme" class="form-label">Atriz/Ator Principal</label>
+					<input type="text" id="atrizFilme" class="form-control" name="ator" required>
+				</div>
+
+				<!-- coluna nota -->
+				<div class="mb-3 col">
+					<label for="imdbFilme" class="form-label">Nota IMDb</label>
+					<input type="text" id="imdbFilme" class="form-control" name="nota" required>
+				</div>
+
+			</div>
+
+			<!-- botão enviar -->
+			<div class="col-auto">
+				<button type="submit" class="btn btn-primary mb-3" onclick="inserir()">Cadastrar</button>
+			</div>
+
+		</form>
+
+	</div>
+
+</body>
+</html>

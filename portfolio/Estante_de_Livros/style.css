@@ -1,0 +1,126 @@
+/* página toda */
+body {
+	background-color: #43435C;
+	font-family: verdana;
+	color: black;
+	text-align: justify;
+	width: 85%;
+	margin: auto;
+}
+
+#topo {
+	background-color: dimgray;
+	padding: 20px;
+	margin-bottom: 0px;
+	border-bottom-right-radius: 50px;
+	border-bottom-left-radius: 50px;
+}
+
+/* links */
+a {
+	color: #DBBC32;
+	text-decoration: none;
+}
+
+a:hover {
+	color: gainsboro;
+}
+
+/* limpei o histórico de navegação */
+a:visited {
+	color: palevioletred;
+}
+
+/* troquei a ordem do focus e active */
+a:focus {
+	color: seagreen;
+}
+
+a:active {
+	color: orangered;
+}
+
+/* seções */
+section {
+	padding: 64px 200px;
+}
+
+#l1, #l3, #l5 {
+	background-color: #4B4C9C;
+}
+
+/* tabelas */
+table {
+	width: 100%;
+}
+
+th, td {
+	/* border: 3px solid white; */
+	border-width: 2px;
+	border-style: solid;
+	border-color: white;
+	border-radius: 6px;
+	text-align: center;
+	padding: 3px;
+}
+
+th {
+	background-color: saddlebrown;
+	color: whitesmoke;
+}
+
+td {
+	background-color: goldenrod;
+}
+
+/* parágrafos */
+p {
+	text-indent: 50px;
+}
+
+/* imagens */
+img {
+	width: 300px;
+	display: block;
+	margin: auto;
+	border-radius: 30px;
+}
+
+/* títulos */
+.titulo {
+	background-color: #4B4C9C;
+	color: white;
+	text-align: center;
+	font-size: 200%;
+}
+
+
+/* Tarefa de casa */
+h1 {
+	color: #DB8840; 
+	text-align:center; 
+	font-size:400%;
+	font-family: math;
+}	
+
+h4 {
+	color: whitesmoke;
+	/* text-align: center; */
+}
+
+.subtitulo {
+	text-align: center; 
+	font-size:120%;
+}
+
+#sumario {
+	color: whitesmoke;
+	background-color: purple;
+	border-radius: 20px;
+	padding: 20px;
+	margin: 50px;
+}
+
+span {
+	color: goldenrod;
+}
